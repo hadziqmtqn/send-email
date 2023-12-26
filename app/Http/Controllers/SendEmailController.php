@@ -9,8 +9,8 @@ class SendEmailController extends Controller
 {
     public function sendEmail()
     {
-        Mail::to('bekenweb@gmail.com')->send(new SampleEmailMail([
-            'title' => 'Test Email',
+        Mail::to('khadziqmuttaqin17@gmail.com')->send(new SampleEmailMail([
+            'title' => 'Reset Password',
             'content' => 'Ini kode OTP Anda ' . rand()
         ]));
 

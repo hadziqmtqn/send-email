@@ -19,11 +19,6 @@ class SampleEmailMail extends Mailable
         $this->data = $data;
     }
 
-    public function build(): SampleEmailMail
-    {
-        return $this->subject('Test Email')->view('emails.sample-email');
-    }
-
     public function envelope(): Envelope
     {
         return new Envelope(
